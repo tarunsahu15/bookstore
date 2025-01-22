@@ -16,7 +16,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post(`${process.env.REACT_APP_API_URL}/user/login`, userInfo)
+      .post("https://bookstore-lm9w.onrender.com/user/login", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
