@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+
+# Database files
+*.sqlite
+*.sqlite3
