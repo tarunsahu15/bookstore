@@ -13,11 +13,12 @@ function Freebook() {
     const getBook = async () => {
       try {
         const res = await axios.get(`${process.env.REACT_APP_API_URL}/book`);
-
+ 
         const data = res.data.filter((data) => data.category === "free");
         console.log(data);
         setBook(data);
       } catch (error) {
+        console.log(process.env.REACT_APP_API_URL);
         console.log(error);
       }
     };
